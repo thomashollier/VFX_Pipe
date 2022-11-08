@@ -26,21 +26,21 @@ and sometimes, when you don't have time for the glue to dry, you can use duct ta
 It's always good to have ways to manipulate images on the command line. The above commands and/or libraries do that. They each have their pluses and minuses. More or less fast, complicated to use, etc... No clear winner here but I use these to fill in the gap where oiiotool is missing specific functionality.
 
 ## Open source packages
-Blender
-Darktable or Digikam
-Meshroom
-Gimp
-Krita
-djv, mrViewer
+### Blender
+### Darktable or Digikam
+### Meshroom
+### Gimp
+### Krita
+### djv, mrViewer
 
-Commercial software
-Maya/Arnold, Houdini, VRay
-Nuke
-Resolve/fusion
-cinesync
+## Commercial software
+### Maya/Arnold, Houdini, VRay
+### Nuke
+### Resolve/fusion
+### cinesync
 
-Online services
-Google drive
-Hightail
-Cloud rendering service
-Fiber internet service
+## Online services
+### Google drive
+### Hightail
+### Cloud rendering service
+### Fiber internet service
