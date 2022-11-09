@@ -25,6 +25,11 @@ and sometimes, when you don't have time for the glue to dry, you can use duct ta
 ### openCV/PIL/imagemagick/vips
 It's always good to have ways to manipulate images on the command line. The above commands and/or libraries do that. They each have their pluses and minuses. More or less fast, complicated to use, etc... No clear winner here but I use these to fill in the gap where oiiotool is missing specific functionality.
 
+### Installing these
+Installing software on linux can be quite an undertaking if you're not (or, actually, also if you are...) a developer. Fortunately, I found that the "brew" package manager has all the important packages, and they all seem quite up to date. So, install brew and just do this:
+
+brew install ffmpeg opencolorio openimageio imagemagick 
+
 ## Open source packages
 ### Blender
 ### Darktable or Digikam
