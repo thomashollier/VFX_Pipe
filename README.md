@@ -1,6 +1,10 @@
 # VFX_Pipe
 Tools, Tips and Tricks for small team/high end VFX production
 
+1. [Must have tools](#must-have-tools)
+2. [Open source packages](#open-source-packages)
+3. [Commercial software](#commercial-software)
+
 ## Platform:
 Windows 10 with WSL
 
