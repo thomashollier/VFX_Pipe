@@ -38,6 +38,9 @@ Installing software on linux can be quite an undertaking if you're not (or, actu
 
 brew install ffmpeg opencolorio openimageio imagemagick 
 
+If everything goes according to plan, it should fail in various unpredictable ways that will take you a while to figure out. To be fair, though, I've found that brew is actually fairly reliable in terms of providing the latest versions while handling dependencies without too much headache. It's also available on osX.
+
+
 ## Open source packages
 ### Blender
 ### Darktable or Digikam
