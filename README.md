@@ -1,14 +1,16 @@
 # VFX_Pipe
 Tools, Tips and Tricks for small team/high end VFX production
 
-1. [Must have tools](#must-have-tools)
-2. [Open source packages](#open-source-packages)
-3. [Commercial software](#commercial-software)
-4. [Online services](#online-services)
-5. [Cool Tricks](#cool-tricks)
+1. [Background](#background)
+2. [Must have tools](#must-have-tools)
+3. [Open source packages](#open-source-packages)
+4. [Commercial software](#commercial-software)
+5. [Hardware](#hardware)
+6. [Online services](#online-services)
+7. [Cool Tricks](#cool-tricks)
 
-## Platform:
-Windows 10 with WSL
+## Background:
+I've worked in high end VFX and animation production facilities for many years and I am part of what I call the "first wave" of people who designed the workflow of what has now been codified into the fairly standard VFX production pipeline. (By the way, I don't want to take undue credit: there are so many other way smarter people who made significant impacts but I like to think some of my contributions have left a trace here or there...). Economic and personal circumstances have made it such that I am now working independently on the periphery of larger facilities, and I am pleased to experience a new environment where the kinds of resources necessary to produce high end work that once were the exclusivity of large facilities are now available to smaller and perhaps more flexible and efficient organizations. One of the ongoing challenges of digital production is having the ability to quickly scale up or down.
 
 ## Must have tools.
 In addition to artistry, the key to a succesfull VFX project is to efficiently process data in a non destructive way that targets the specific intended goal with the right level of accuracy.
