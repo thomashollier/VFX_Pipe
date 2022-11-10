@@ -15,7 +15,7 @@ I've worked in high end VFX and animation production facilities for many years a
 ## Must have tools.
 In addition to artistry, the key to a succesfull VFX project is to efficiently process data in a non destructive way that targets the specific intended goal with the right level of accuracy. No matter what the brochure for the latest version of the software says, managing the production of VFX will always throw some convoluted set of circumstances for which there is simple no push button solution. You need to be fluent with both the abstracted data flow and the specific tools that constitute the building blocks, and you need to have the ability to get them to interact with each other in an efficient, coherent and reproducible way.
 
-### ACES ocio ditribution.
+### ocio and ACES config files
 This allows you to properly ingest imagery and deliver it in a way that maintains the integrity of the original data. Typically, footage will be ingested in some custom camera LOG format, be worked on in linear ACEScg, and deliver either in ACES or some display referred space. Most software tools are now aces compliant, and you need a properly set up environment to take advantage of it.
 
 ### oiio tools
