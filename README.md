@@ -4,6 +4,8 @@ Tools, Tips and Tricks for small team/high end VFX production
 1. [Must have tools](#must-have-tools)
 2. [Open source packages](#open-source-packages)
 3. [Commercial software](#commercial-software)
+4. [Online services](#online-services)
+5. [Cool Tricks](#cool-tricks)
 
 ## Platform:
 Windows 10 with WSL
@@ -46,7 +48,8 @@ brew install ffmpeg opencolorio openimageio imagemagick
 ### Maya/Arnold, Houdini, VRay
 ### Nuke
 ### Resolve/fusion
-### cinesync
+### Cinesync
+### Syntheyes
 
 ## Online services
 ### Google drive
