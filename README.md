@@ -85,6 +85,7 @@ ffmpeg -i darkCameraClipInLog.mxf -vf "lut3d=hald512_log2sRGB+2.cube,scale=1920:
 ### Texture correction with HALD luts
 A texture paint package should allow you to apply global color corrections to a whole set of textures in one step but if you want to apply arbitrary correction to a set of texture images you inherited, you can color correct one texture in photoshop until you like where you are and then apply that correction in photoshop to your neutral HALD lut, save it out and apply it to all your textures.
 ~~~
+#!/bin/bash
 mkdir original
 for tx in *_color.png
 do
@@ -92,4 +93,22 @@ magick $tx hald_photoshopCC.png -hald-clut transform.png
 mv $tx original
 mv transform.png $tx
 done
+~~~
+### Watermarks with ffmpeg
+You can add watermarks to your lut converted proxies
+~~~
+#!/bin/bash
+
+input=/path/to/movie/A029C001_220610_CPEK.mov
+
+recipient="vendorX"
+copyright="©2022 Relentless Play"
+
+textCommand=\
+'drawtext=text='${recipient}':fontsize=(w/20):fontcolor=white:alpha=.25:x=(w-text_w)/2:y=(h-text_h)/2+(1.5*w/20)\
+,drawtext=text=--- DO NOT DISTRIBUTE ---:fontsize=(w/20):fontcolor=white:alpha=.25:x=(w-text_w)/2:y=(h-text_h)/2\
+,drawtext=text='${copyright}':fontsize=(w/20):fontcolor=white:alpha=.25:x=(w-text_w)/2:y=(h-text_h)/2-(1.5*w/20)'
+
+ffmpeg -i ${input} -vf "lut3d=/mnt/f/RP_WTN//bin/cubeluts/log2sRGB.cube,${textCommand}" \
+-c:v h264 -crf 28 -pix_fmt yuv420p -an ${recipient}_$(basename ${input}) -y
 ~~~
