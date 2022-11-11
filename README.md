@@ -19,10 +19,10 @@ In addition to artistry, an effective VFX production needs to efficiently proces
 This allows you to properly ingest imagery and deliver it in a way that maintains the integrity of the original data. Typically, footage will be ingested in some custom camera LOG format, be worked on in linear ACEScg, and deliver either in ACES or some display referred space. Most software tools are now aces compliant, and you need a properly set up environment to take advantage of it.
 
 ### oiio tools
-No matter how thorough software is, production always seems to create situations where something needs to be translated or converted in some custom fashion that is not easily achievable within the main software packages. oiiotool is a swiss army knife that can handle all common VFX image formats, color space conversions, generate textures, as well as some basic color correction and image processing. It has a python API and can easily be embedded in scripted tasks.
+Production always seems to create situations where something needs to be translated or converted in some custom fashion that is not easily achievable within the main software packages. oiiotool is a swiss army knife that can handle all common VFX image formats, color space conversions, generate textures, as well as some basic color correction and image processing. It has a python API and can easily be embedded in scripted tasks.
 
 ### ffmpeg
-If oiiotools is a swiss army knife, then ffmpeg is a set of Ginsu knifes that can make quick work of most digital video needs. It provides simple and efficient solutions to workflows involving the ingest or generation of video clips. Although it is very different in legacy and background from oiio, it makes a great partner to it and there is very little that can't be done with the two together. It also has various APIs that aloows it to be embedded in scripted processes.
+Ffmpeg is a workhorse that provides efficient solutions to needs relating to the ingest or the generation of video clips. Although it is very different in legacy and background from oiio, it makes a great partner to it and there is very little that can't be done with the two together. It also has various APIs that aloows it to be embedded in scripted processes.
 
 ### python
 Because you need glue to stick things together
@@ -101,7 +101,7 @@ ffmpeg -i ${input} -vf "lut3d=/mnt/f/RP_WTN//bin/cubeluts/log2sRGB.cube,${textCo
 -c:v h264 -crf 28 -pix_fmt yuv420p -an ${recipient}_$(basename ${input}) -y
 ~~~
 ### Global texture correction with HALD luts
-A texture paint package should allow you to apply global color corrections to a whole set of textures in one step but if you want to apply arbitrary correction to a set of texture images you inherited, you can color correct one texture in photoshop until you like where you are and then apply that correction in photoshop to your neutral HALD lut, save it out and apply it to all your textures.
+A texture paint package should allow you to apply global color corrections to a whole set of textures in one step but sometimes, you need to apply arbitrary correction to a set of texture images you inherited. You can color correct one texture in gimp or photoshop until you get the desired result, apply that correction to your neutral HALD image, save it out and apply it to all your textures.
 ~~~
 #!/bin/bash
 mkdir original
