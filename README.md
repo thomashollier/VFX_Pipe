@@ -64,15 +64,21 @@ If everything goes according to plan, it should fail in various unpredictable wa
 
 ## Cool tricks
 ### cube and HALD luts from ACES OCIO transforms
-Use imagemagick to create a HALD image (this makes a 512x512 which seems accurate enough for my purpose):
+Use imagemagick to create a HALD image (this makes a 512x512 which seems accurate enough for my purpose but if you want a 24 bit, use 17 instead of 8):
 ~~~
 magick hald:8 hald512_Neutral.png
 ~~~
 Use oiiotool to bake any color correction in a new HALD image. In this case, I am creating a convert from ARRI Log space to aces, increasing the exposure by 2 stops, and then converting to sRGB.
 ~~~
-oiiotool hald512_Neutral.png --colorconvert "Input - ARRI - V3 LogC (EI800) - Wide Gamut" "ACES - ACEScg" -mulc 4 --colorconvert "ACES - ACEScg" "output - sRGB" -o hald512_log2sRGB+2.png
+oiiotool hald512_Neutral.png --colorconvert "Input - ARRI - V3 LogC (EI800) - Wide Gamut" "ACES - ACEScg" \
+  -mulc 4 \
+  --colorconvert "ACES - ACEScg" "output - sRGB" -o hald512_log2sRGB+2.png
 ~~~
 Finally, I use this handy little python script to generate a cube lut
 ~~~
 ./hald_to_cube.py hald512_log2sRGB+2.png hald512_log2sRGB+2.cube
+~~~
+You can then apply any color transforms in ffmpeg (extremely useful to quickly create accurate proxies)
+~~~
+ffmpeg -i darkCameraClipInLog.mxf -vf "lut3d=hald512_log2sRGB+2.cube,scale=1920:-1" twoStopsBrighterInsRGBClip.mov
 ~~~
