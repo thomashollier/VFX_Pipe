@@ -68,5 +68,7 @@ Use imagemagick to create a HALD image (this makes a 512x512 which seems accurat
 magick hald:8 hald512_Neutral.png
 Use oiiotool to bake any color correction in a new HALD image. In this case, I am creating a convert from ARRI Log space to aces, increasing the exposure by 2 stops, and then converting to sRGB.
 oiiotool hald512_Neutral.png --colorconvert "Input - ARRI - V3 LogC (EI800) - Wide Gamut" "ACES - ACEScg" -mulc 4 --colorconvert "ACES - ACEScg" "output - sRGB" -o hald512_log2sRGB+2.png
-Finally, I se this handy little python script to generate a cube lut
+Finally, I use this handy little python script to generate a cube lut
+---
 ./hald_to_cube.py hald512_log2sRGB+2.png hald512_log2sRGB+2.cube
+---
