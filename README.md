@@ -78,7 +78,7 @@ Finally, I use this handy little python script to generate a cube lut
 ~~~
 ./hald_to_cube.py hald512_log2sRGB+2.png hald512_log2sRGB+2.cube
 ~~~
-You can then apply any color transforms in ffmpeg (extremely useful to quickly create accurate proxies)
+You can then apply any ACES color transforms in ffmpeg (extremely useful to quickly create accurate proxies)
 ~~~
 ffmpeg -i darkCameraClipInLog.mxf -vf "lut3d=hald512_log2sRGB+2.cube,scale=1920:-1" twoStopsBrighterInsRGBClip.mov
 ~~~
@@ -93,4 +93,3 @@ mv $tx original
 mv transform.png $tx
 done
 ~~~
-
