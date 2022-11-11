@@ -74,7 +74,7 @@ oiiotool hald512_Neutral.png --colorconvert "Input - ARRI - V3 LogC (EI800) - Wi
   -mulc 4 \
   --colorconvert "ACES - ACEScg" "output - sRGB" -o hald512_log2sRGB+2.png
 ~~~
-Finally, I use this handy little python script to generate a cube lut
+Finally, I use [this handy little python script](https://github.com/thomashollier/LUT-Convert) to generate a cube lut
 ~~~
 ./hald_to_cube.py hald512_log2sRGB+2.png hald512_log2sRGB+2.cube
 ~~~
