@@ -100,7 +100,7 @@ textCommand=\
 ffmpeg -i ${input} -vf "lut3d=/mnt/f/RP_WTN//bin/cubeluts/log2sRGB.cube,${textCommand}" \
 -c:v h264 -crf 28 -pix_fmt yuv420p -an ${recipient}_$(basename ${input}) -y
 ~~~
-### Texture correction with HALD luts
+### Global texture correction with HALD luts
 A texture paint package should allow you to apply global color corrections to a whole set of textures in one step but if you want to apply arbitrary correction to a set of texture images you inherited, you can color correct one texture in photoshop until you like where you are and then apply that correction in photoshop to your neutral HALD lut, save it out and apply it to all your textures.
 ~~~
 #!/bin/bash
