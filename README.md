@@ -82,3 +82,15 @@ You can then apply any color transforms in ffmpeg (extremely useful to quickly c
 ~~~
 ffmpeg -i darkCameraClipInLog.mxf -vf "lut3d=hald512_log2sRGB+2.cube,scale=1920:-1" twoStopsBrighterInsRGBClip.mov
 ~~~
+### Texture correction with HALD luts
+A texture paint package should allow you to apply global color corrections to a whole set of textures in one step but if you want to apply arbitrary correction to a set of texture images you inherited, you can color correct one texture in photoshop until you like where you are and then apply that correction in photoshop to your neutral HALD lut, save it out and apply it to all your textures.
+~~~
+mkdir original
+for tx in *_color.png
+do
+magick $tx hald_photoshopCC.png -hald-clut transform.png
+mv $tx original
+mv transform.png $tx
+done
+~~~
+
