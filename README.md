@@ -10,7 +10,7 @@ Tools, Tips and Tricks for small team/high end VFX production
 7. [Cool Tricks](#cool-tricks)
 
 ## Background:
-I've worked in high end VFX and animation production facilities for many years and I am part of the "first wave" of people who ended up inventing the workflow that has now been codified into the standard VFX production pipeline. (By the way, I don't want to take undue credit: there are so many other way smarter people who made significant impacts but I like to think some of my contributions have left a trace here or there...). Economic and personal circumstances have made it such that I am now working independently on the periphery of larger facilities, and I have found that the resources necessary to produce high end work that once were the exclusivity of large facilities are now available to smaller and perhaps more flexible and efficient organizations. 
+I've worked in high end VFX and animation production facilities for many years and I am part of the "first wave" of people who ended up inventing the workflow that has now been codified into the standard VFX production pipeline. (Not taking undue credit: there are so many other way smarter people who made much more significant impacts but I like to think some of my contributions have left a trace here or there...). I am now doing a fair bit of work independently or on the periphery of larger facilities, and I have found that the resources necessary to produce high end work that once were the exclusivity of those large facilities are now available to smaller and perhaps more flexible and efficient organizations. 
 
 ## Must have tools.
 In addition to artistry, an effective VFX production needs to efficiently process data in a non destructive way that targets specific tasks with a meaningful level of accuracy. The following tools provide that capability.
@@ -46,20 +46,20 @@ pip3 install pillow pyseq
 
 
 ## Open source software packages
+Even though the subscription models for high end packages offer an entry point for smaller organizations, these costs can quickly add up. There are many open source solutions that can offer similar functionality.
+
 ### Blender
 I'm not a power user but probably should be. A lot of great dev work is going into this. It's grown significantly more powerful over the last few years and it will continue to grab an increasing part of the production base, particularly as USD becomes more universally adopted.
 
-### Darktable or Digikam
-Lightroom is a great tool but I find that its cost is too steep for the specific functionality I am looking for. These two tools offer a good solution for handling photo reference and digital negatives for data aquisition.
-
 ### Meshroom
-This is a great free photogrammetry tool. I've been able to capture large sets and accurately place cameras in that set.
+This is a great free photogrammetry tool. I've been able to capture large sets and accurately place cameras in those sets.### Darktable or Digikam
+Lightroom is a great tool but I find that its cost is too steep for the specific functionality I am looking for. These two tools offer a good solution for handling photo reference and digital negatives for data aquisition.
 
 ### Gimp and Krita
 Same as Darktable or Digikam: If you don't feel you are getting the value out of the Adobe Creative Suite, these tools can offer most of photoshop's functionality.
 
 ### djv, mrViewer
-
+These programs give the artist the ability to play back full dynamic range image sequences or movie files with frame accuracy in a color space compliant, which is definitely not trivial. You need a lot more than just a movie player. Looks like djv is no longer being maintained but MrViewer is.
 
 ## Commercial software
 ### Maya/Arnold, Houdini, VRay
