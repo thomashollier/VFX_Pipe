@@ -46,10 +46,10 @@ pip3 install pillow pyseq
 
 
 ## Open source software packages
-Even though the subscription models for high end packages offer an entry point for smaller organizations, these costs can quickly add up. There are many open source solutions that can offer similar functionality.
+Even though the subscription models for commercial packages offer an entry point for smaller organizations, these costs can quickly add up. There are many open source solutions that can offer similar functionality.
 
 ### Blender
-I'm not a power user but probably should be. A lot of great dev work is going into this. It's grown significantly more powerful over the last few years and it will continue to grab an increasing part of the production base, particularly as USD becomes more universally adopted.
+I'm not a power user but probably should be. A lot of great dev work is going into Blender. It's grown significantly more powerful over the last few years and it will continue to grab an increasing part of the production base, particularly as USD becomes more universally adopted.
 
 ### Meshroom
 This is a great free photogrammetry tool. I've been able to capture large sets and accurately place cameras in those sets.### Darktable or Digikam
