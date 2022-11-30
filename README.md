@@ -2,7 +2,7 @@
 Tools, Tips and Tricks for small team/high end VFX production
 
 1. [Background](#background)
-2. [Must have tools](#must-have-tools)
+2. [Must have pipeline tools](#must-have-tools)
 3. [Open source packages](#open-source-packages)
 4. [Commercial software](#commercial-software)
 5. [Hardware](#hardware)
