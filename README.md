@@ -13,7 +13,7 @@ Tools, Tips and Tricks for small team/high end VFX production
 I've worked in high end VFX and animation production facilities for many years and I am part of the "first wave" of people who ended up inventing the workflow that has now been codified into the standard VFX production pipeline. (Not taking undue credit: there are so many other way smarter people who made much more significant impacts but I like to think some of my contributions have left a trace here or there...). I am now doing more work independently or on the periphery of larger facilities, and I have found that the resources necessary to produce high end work that once were the exclusivity of those large facilities are now available to smaller efficient organizations. 
 
 ## Must have tools.
-In addition to artistry, an effective VFX production needs to efficiently process data in a non destructive way that targets specific tasks with a meaningful level of accuracy. The following tools provide that capability.
+In addition to artistry, an effective VFX production needs to efficiently process data in a non destructive way that targets specific tasks with a meaningful level of accuracy. The following tools provide that capability as long as you don't mind putting your pipeline builder hat on.
 
 ### ocio and ACES config files
 This allows you to properly ingest imagery and deliver it in a way that maintains the integrity of the original data. Typically, footage will be ingested in some custom camera LOG format, be worked on in linear ACEScg, and deliver either in ACES or some display referred space. Most software tools are now aces compliant, and you need a properly set up environment to take advantage of it.
@@ -41,7 +41,6 @@ brew install ffmpeg opencolorio openimageio imagemagick opencv
 Another necessary evil in this software soup is the python package manager "pip". The process of installing the right package in the right place with the right version of python can be very time consuming.
 
 pip3 install pillow pyseq
-
 
 ## Open source or free software packages
 Even though the subscription models for commercial packages offer an entry point for smaller organizations, these costs can quickly add up. There are many open source solutions that can offer similar functionality.
