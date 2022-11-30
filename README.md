@@ -50,6 +50,9 @@ Even though the subscription models for commercial packages offer an entry point
 ### Blender
 I'm not a power user but I am continuing to learn it as I go. A lot of great dev work is going into Blender and it has grown significantly more powerful over the last few years. It will continue to grab an increasing part of the production base, particularly as USD becomes more universally adopted.
 
+### Davinci Resolve
+This is the free version of a commercial product. Its main focus is color correction and editorial but it includes Fusion which is a very capable compositing package. It has ACES support, 3D, great masking and roto tools, and it is fast. The free version can only output to UHD and has a few disabled features but it's a very well rounded production tool.
+
 ### Meshroom
 This is a great free photogrammetry tool. I've been able to capture large sets and accurately place cameras in those sets.
 
