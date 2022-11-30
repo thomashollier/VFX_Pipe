@@ -43,14 +43,16 @@ Another necessary evil in this software soup is the python package manager "pip"
 pip3 install pillow pyseq
 
 
-## Open source software packages
+## Open source or free software packages
 Even though the subscription models for commercial packages offer an entry point for smaller organizations, these costs can quickly add up. There are many open source solutions that can offer similar functionality.
 
 ### Blender
-I'm not a power user but probably should be. A lot of great dev work is going into Blender. It's grown significantly more powerful over the last few years and it will continue to grab an increasing part of the production base, particularly as USD becomes more universally adopted.
+I'm not a power user but I am continuing to learn it as I go. A lot of great dev work is going into Blender and it has grown significantly more powerful over the last few years. It will continue to grab an increasing part of the production base, particularly as USD becomes more universally adopted.
 
 ### Meshroom
-This is a great free photogrammetry tool. I've been able to capture large sets and accurately place cameras in those sets.### Darktable or Digikam
+This is a great free photogrammetry tool. I've been able to capture large sets and accurately place cameras in those sets.
+
+### Darktable or Digikam
 Lightroom is a great tool but I find that its cost is too steep for the specific functionality I am looking for. These two tools offer a good solution for handling photo reference and digital negatives for data aquisition.
 
 ### Gimp and Krita
@@ -60,17 +62,24 @@ Same as Darktable or Digikam: If you don't feel you are getting the value out of
 These programs give the artist the ability to play back full dynamic range image sequences or movie files with frame accuracy in a color space compliant, which is definitely not trivial. You need a lot more than just a movie player. Looks like djv is no longer being maintained but MrViewer is.
 
 ## Commercial software
-### Maya/Arnold, Houdini, VRay
-### Nuke
-### Resolve/fusion
-### Cinesync
-### Syntheyes
+### Subscription model
+There was a time when purchasing a license to professional VFX production software represented an investment that could easily reach in the tens of thousands of dollars. This is no longer the case. Most major packages offer affordable short term licenses, as well as significant discounts for independent operators. This provides the flexibility to make use of the right tool at the right time without breaking the bank.
+
+### Special mentions
+While the above model has been adopted by most of the major players, some packages are still using a "buy to own" model which are not prohibitive. The first one is Davinci Resolve. It's a production tested editing and color correction system, and it includes Fusion which is a very capable compositor that includes 3d tools and some great masking and rotoing options. It's very affordable and you get a really surprisingly fast and powerful suite of tools. 
+The other tool worth a mention is syntheyes for match moving. It's fairly unintuitive but it's very fast and powerful. 
 
 ## Online services
-### Google drive
-### Hightail
-### Cloud rendering service
 ### Fiber internet service
+If you don't have fast internet, you can't really do any production work remotely. Simple as that. Lucky for me, my neighborhood was just outfitted with fiber and I now get 900 Mbps downloads AND uploads. Obviously, it's not instantaneous but it is completely adequate for my needs. It's a game changer. My "fast" cable service was 60 Mbps down and 6 Mbps up. 
+### Cloud rendering services
+This is another game changer. I do not have to invest in hardware to get my final work rendered. My last project involved a 450 hour final 3d render that I was able to complete in 3 hours for a very reasonable cost. Debugging the setup and the uploads took some work but once it was done, it was very transparent.
+### Google drive
+My projects are continually synced to a large google drive. It's pretty transparent. Sometimes, I may need to pause the service when I need to use bandwidth for something else but other than that, it's great. Don't forget that it's NOT a backup in that if you delete a file on your local machine, it gets deleted in google drive.
+Another benefit of Google drive is the ability to easily share content with others when necessary. The team can have access to the same home directories and configurations.
+And lastly, it's great to have the ability to access content online if you happen to be away from the workspace.
+### Hightail
+I think this used to be "sendit" or is a new service filling the same niche. This is designed for large file transfers, typically for footage turnovers and final deliveries.
 
 ## Cool tricks
 ### cube and HALD luts from ACES OCIO transforms
