@@ -38,8 +38,6 @@ Installing software on linux can be quite an undertaking if you're not (or, actu
 
 brew install ffmpeg opencolorio openimageio imagemagick opencv
 
-If everything goes according to plan, it should fail in various unpredictable ways that will take you a while to figure out. To be fair, though, I've found that brew is actually generally reliable in terms of providing up to date versions while handling dependencies without too much headache. It's also available on osX.
-
 Another necessary evil in this software soup is the python package manager "pip". The process of installing the right package in the right place with the right version of python can be very time consuming.
 
 pip3 install pillow pyseq
