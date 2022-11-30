@@ -40,7 +40,9 @@ brew install ffmpeg opencolorio openimageio imagemagick opencv
 
 Another necessary evil in this software soup is the python package manager "pip". The process of installing the right package in the right place with the right version of python can be very time consuming.
 
-pip3 install pillow pyseq
+pip3 install pillow    # image processing library
+pip3 install pyseq     # manage file sequences
+pip3 install pycubelut # apply cube luts in python
 
 ## Open source or free software packages
 Even though the subscription models for commercial packages offer an entry point for smaller organizations, these costs can quickly add up. There are many open source solutions that can offer similar functionality.
