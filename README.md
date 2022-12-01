@@ -139,6 +139,11 @@ mv transform.png $tx
 done
 ~~~
 ### Dailies
-This isn't quite finished yet. I forked a github repo and tried to adapt it to my needs but didn't quite get there. If I were to go back, I'd probably want to start from scratch and figure out ahead of time all the possible use cases for this kind of script and design it in a more flexible and modular way.
-
 [generate-dailies](https://github.com/thomashollier/generate-dailies)
+This isn't quite finished yet. I forked a github repo and tried to adapt it to my needs but didn't quite get there. If I were to go back, I'd probably want to start from scratch and figure out ahead of time all the possible use cases for this kind of script and design it in a more flexible and modular way. Additionally, experience has shown that the process of VFX production requires a consistent set of image sequence processing steps, of which dailies is but one, and it would be great to have all these steps use the same backend. Right now, there are various possible approaches with pros and cons.
+#### oiiotool + ffmpeg:
+overall pretty slow and a little convoluted but oiiotool is a gold standard for color space and proper handling of image data.
+#### ffmpeg
+can be very fast but color space conversion is a hack and I've had issues reading exr files. I've used it very succesfully to generate dpx files from camera log movie files.
+#### nuke
+I created a few scripts to run simple batch processing with nuke on the command line. It's super fast and obviously can do everything you could ever think of but it requires a license, and the indie version is capped at 10 python calls which doesn't allow much.
