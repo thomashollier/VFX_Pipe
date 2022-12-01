@@ -140,3 +140,5 @@ done
 ~~~
 ### Dailies
 This isn't quite finished yet. I forked a github repo and tried to adapt it to my needs but didn't quite get there. If I were to go back, I'd probably want to start from scratch and figure out ahead of time all the possible use cases for this kind of script and design it in a more flexible and modular way.
+
+[generate-dailies](https://github.com/thomashollier/generate-dailies)
